@@ -1,0 +1,16 @@
+:root{
+    --primary-font: 'Fraunces', serif;
+    --secundary-font: 'Barlow', sans-serif;
+    --site-name-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --primary-font-weight: 900;
+    --secundary-font-weight: 600;
+
+    --graphic-design-text-color: hsl(167, 40%, 24%);
+    --photography-text-color: hsl(198, 62%, 26%);
+    
+    --testimonials-primary-color: hsl(210, 4%, 67%);
+    --testimonials-second-color: hsl(213, 9%, 39%);
+    --client-name-color: hsl(212, 27%, 19%);
+
+}

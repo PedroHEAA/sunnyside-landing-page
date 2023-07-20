@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+}
+
+.header {
+    font-family: var(--primary-font);
+    position: relative;
+    background: url(../images/mobile/image-header.jpg) center center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    color: white;
+    padding: 1.5rem;
+    grid-area: header;
+}
+
+.header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-container .site-name {
+    font-size: 2.3rem;
+    font-family: var(--site-name-font);
+    font-weight: var(--primary-font-weight);
+}
+
+.header .title {
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: var(--primary-font-weight);
+    margin-top: 9.0rem;
+    letter-spacing: 0.8rem;
+    text-transform: uppercase;
+}
+
+.header::after {
+    position: absolute;
+    content: url(../images/icon-arrow-down.svg);
+    bottom: 25%;
+    right: 45%;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+@keyframes downarrow {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+}
+
+/* ------------------------------- */
+.main{
+    grid-area: main;
+}
+
+.main .about img {
+    width: 100%;
+    height: 100%;
+}
+
+.main .about{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .about .about-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 40px;
+}
+
+.main .about .about-description h3 {
+    font-family: var(--primary-font);
+    font-size: 3.5rem;
+    font-weight: var(--primary-font-weight);
+    margin-bottom: 2.5rem;
+    color: hsl(212, 27%, 19%);
+}
+
+.main .about .about-description p {
+    font-family: var(--secundary-font);
+    font-size: 1.6rem;
+    font-weight: var(--secundary-font-weight);
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 3.5rem;
+    line-height: 2.7rem;
+}
+
+.main .about .about-description a {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    font-weight: var(--primary-font-weight);
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.main .about .about-description a:hover::before {
+    position: absolute;
+    content: "";
+    width: 110%;
+    height: 50%;
+    top: 12px;
+    right: -5px;
+    border-radius: 50px;
+    background-color: hsl(7, 99%, 70%, 0.5);
+    z-index: -1;
+}
+
+.main .about-1 .about-description a:hover::before {
+    background-color: hsl(51, 100%, 49%, 0.4);
+}
+
+.main .about-2 .about-description a:hover::before {
+    background-color: hsl(7, 99%, 70%, 0.4);
+}
+
+
+/* ------------------------------- */
+.services{
+    grid-area: services;
+}
+
+.main .service-1 {
+    background: url(../images/mobile/image-graphic-design.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main .service-2 {
+    background: url(../images/mobile/image-photography.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main .service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 6.0rem 1.5rem;
+}
+
+.main .service h3 {
+    font-size: 2.7rem;
+    font-family: var(--primary-font);
+    font-weight: var(--primary-font-weight);
+}
+
+.main .service p {
+    font-size: 1.6rem;
+    font-family: var(--secundary-font);
+    padding-top: 3.0rem;
+    line-height: 2.7rem;
+}
+
+.main .service-1 {
+    color: var(--graphic-design-text-color);
+}
+
+.main .service-2 {
+    color: var(--photography-text-color);
+}
+
+/* ------------------------------- */
+
+.main .testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4.0rem;
+    padding: 6rem 3.5rem;
+}
+
+.main .testimonials h3 {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: var(--primary-font-weight);
+    color: var(--testimonials-primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    padding-bottom: 3rem;
+}
+
+.main .clients-testimonials .review {
+    padding-bottom: 6.0rem;
+}
+
+.main .clients-testimonials .review img {
+    height: 7.0rem;
+    border-radius: 50%;
+}
+
+.main .clients-testimonials .review .testimonial-description {
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    font-family: var(--secundary-font);
+    font-weight: var(--primary-font-weight);
+    color: var(--testimonials-second-color);
+    padding-top: 3.0rem;
+}
+
+.main .clients-testimonials .review .client-name {
+    font-size: 1.8rem;
+    font-family: var(--primary-font);
+    font-weight: 900;
+    color: var(--client-name-color);
+    padding-top: 3.0rem;
+}
+
+.main .clients-testimonials .review .job {
+    font-family: var(--secundary-font);
+    font-size: 1.4rem;
+    padding-top: 1.2rem;
+    color: var(--testimonials-primary-color);
+}
+
+/* ------------------------------- */
+
+.main .projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main .projects picture img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.main .projects picture img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* ------------------------------- */
+
+.footer{
+    grid-area: footer;
+    background-color: hsl(168, 73%, 67%);
+    padding: 50px 20px 90px 20px;
+}
+
+.footer h3{
+    font-size: 3.8rem;
+    font-family: var(--primary-font);
+    font-weight: 900;
+    color: hsl(167, 40%, 24%);
+    text-transform: lowercase;
+    text-align: center;
+}
+
+.footer .footer-guide{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3.5rem;
+    font-size: 1.7rem;
+}
+
+.footer .footer-guide li a{
+    font-family: var(--secundary-font);
+    color: hsl(168, 34%, 41%);
+}
+
+.footer .footer-guide li a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+.footer .social-medias{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 6.5rem;
+}
